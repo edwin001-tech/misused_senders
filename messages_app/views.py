@@ -8,8 +8,8 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# Alternative Classifier (valhalla/distilbart-mnli-12-9)
-classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
+# Alternative Classifier (facebook/bart-large-mnli) 
+classifier = pipeline("zero-shot-classification", model="valhalla/distilbart-mnli-12-9")
 
 
 def classify_messages_batch(messages):

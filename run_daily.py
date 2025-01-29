@@ -1,7 +1,7 @@
 import os
 import django
 import logging
-from messages_app.views import find_misused_sender_ids  # Update `myapp` with your app name
+from messages_app.views import find_misused_sender_ids  
 
 # Configure logging
 logging.basicConfig(
@@ -20,13 +20,13 @@ def main():
     """
     try:
         # Set up Django environment
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "message_classification.settings")  # Update with your project name
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "message_classification.settings")
         django.setup()
 
         logger.info("Django environment set up successfully.")
 
         # Directly invoke the logic without requiring an HTTP request
-        response = find_misused_sender_ids(None)  # Pass None for `request` if unused
+        response = find_misused_sender_ids(None) 
         logger.info(f"Task completed: {response.content.decode()}")
 
     except Exception as e:
