@@ -1,0 +1,7 @@
+Device set to use cpu
+2025-01-29 10:40:12,960 [ERROR] An error occurred: No module named 'myproject'
+Device set to use cpu
+2025-01-29 07:46:13,965 [INFO] Django environment set up successfully.
+2025-01-29 07:55:26,309 [INFO] Processed 224 records so far...
+2025-01-29 07:55:32,201 [INFO] Email sent successfully with the CSV attachment.
+2025-01-29 07:55:32,203 [INFO] Task completed: {"message": "Misused sender IDs have been processed and emailed successfully."}
