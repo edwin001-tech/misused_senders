@@ -1,0 +1,5 @@
+myenv/
+.gitignore
+env/
+.git
+.env

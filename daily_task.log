@@ -15,3 +15,13 @@ Device set to use cpu
 2025-01-29 10:36:56,682 [INFO] Processed 220 records so far...
 2025-01-29 10:37:01,547 [INFO] Email sent successfully with the CSV attachment.
 2025-01-29 10:37:01,549 [INFO] Task completed: {"message": "Misused sender IDs have been processed and emailed successfully."}
+
+Device set to use cpu
+Traceback (most recent call last):
+  File "/home/eduin/Desktop/message_classification/run_daily.py", line 11, in <module>
+    logging.FileHandler("/app/daily_task.log"),
+  File "/usr/lib/python3.10/logging/__init__.py", line 1169, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "/usr/lib/python3.10/logging/__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+FileNotFoundError: [Errno 2] No such file or directory: '/app/daily_task.log'

@@ -8,10 +8,11 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("daily_task.log"),
+        logging.FileHandler("/app/daily_task.log"),
         logging.StreamHandler()
     ]
 )
+
 logger = logging.getLogger(__name__)
 
 def main():
